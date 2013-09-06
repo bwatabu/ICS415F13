@@ -1,0 +1,124 @@
+<!DOCTYPE html5>
+<html>
+<head>
+
+<style>
+body{
+background-image:url('http://oddstuffmagazine.com/wp-content/uploads/2013/04/Marutaro26.jpg');
+}
+
+h1{
+color:red;
+}
+h2{
+color:red;
+}
+h3{
+color:red;
+}
+.nav{
+height:50px;
+};
+
+.foot{
+color:red;
+height:50px;
+}
+
+.tab{
+width:100%;
+}
+
+.foot{
+height:50px;
+}
+
+p{
+color:green;
+}
+</style>
+
+</head>
+
+<body>
+<table class="tab" border="1">
+<tr><td class="heads" colspan="2">
+<h1>Bryson Watabu's website</h1>
+</td>
+<tr><td class="nav" colspan="2">
+<a href="a04.html" value="Home">Home</a>
+<a href="Forms.html" value="Forms">Forms</a>
+</td>
+</tr>
+  <tr id="lasdfj" class="foo">
+    <td valign="top" width="200" height="500"><h3>Summary Window</h3>
+
+<p>HTML supports tables.</p>
+<p>HTML supports three different types of lists; unordered ordered, and description.</p>
+</td>
+
+    <td valign="top" width="700" height="500" align="top"><h2>Home Page</h2>
+	<p>Tables:</p>
+	<p></p>
+		<table border="0">
+			<caption>Borderless table</caption>
+			<tr>	
+				<th>Header</th>
+			</tr>
+			<tr>
+				<td>cell</td>
+			</tr>
+		</table>
+		<p></p>
+		<table border="1">
+			<caption>Bordered Table</p>
+			<tr>
+			<th>Header 1</th>
+			<th>Header 2</th>
+			</tr>
+			<tr>
+				<td>row 1, cell 1</td>
+				<td>row 1 cell 2</td>
+			</tr>
+			<tr>
+				<td>row 2, cell 1</td>
+				<td>row 2 cell 2</td>
+			</tr>
+	<tr>
+				<td>footer 1</td>
+				<td>footer 2</td>
+			</tr>
+		</table>
+	<p>Lists:</p>
+	<p></p>
+	<ul>
+		<li>Coffee</li>
+		<li>Milk</li>
+	</ul>
+	<ol>
+		<li>Coffee</li>
+		<li>Milk</li>
+	</ol>
+	<dl>
+	<dt>Coffee</dt>
+	<dd>- black hot drink</dd>
+	<dt>Milk</dt>
+	<dd>- white cold drink</dd>
+	<p>Here's a two column layout with header, navigation bar and footer sections.  
+	There is a fairly large header and narrow horizontal navigation bar.</p>
+	<p></p>
+	<p>The main section of the web site has a left-hand.</p>
+	</dl>	
+	</td>
+
+  </tr>
+
+<tr>
+<td class="foot" colspan="2">
+<footer>
+Copyright (C) Bryson Watabu
+</footer>
+</td></tr>
+</table>
+</body>
+</html>
