@@ -1,16 +1,43 @@
 <!DOCTYPE html5>
 <html>
+<head>
+<link ref="stylesheet" type="text/css" href="mystyle.css"/>
+<style>
+.full-width {
+width:100%;
+}
+footer {
+color:blue;
+}
+#lasdfj {
+background-color:red;
+}
+.foo {
+color:green;
+}
+[colspan] {
+color:yellow;
+}
+.foo + p {
+color:black;
+}
+p.foo
+</style>
+</head>
 <body>
+<table border="1" width="100%">
+<tr><td colspan="2">
 <h1>Bryson Watabu's website</h1>
-<hr>
+</td></td>
+<tr><td colspan="2">
 <a href="a03test.html" value="Home">Home</a>
 <a href="Forms.html" value="Forms">Forms</a>
 <a href="Frames.html" value="Frames">Frames</a>
-<hr>
-<table border="1">
-  <tr>
+</td>
+</tr>
+  <tr id="lasdfj" class="foo">
     <td valign="top" width="200" height="500"><h3>Summary Window</h3>
-	
+
 <p>HTML supports tables.</p>
 <p>HTML supports three different types of lists; unordered ordered, and description.</p>
 </td>
@@ -68,13 +95,15 @@
 	<p>The main section of the web site has a left-hand.</p>
 	</dl>	
 	</td>
-	
+
   </tr>
 
-
-</table>
-</body>
+<tr>
+<td colspan="2">
 <footer>
 Copyright (C) Bryson Watabu
 </footer>
+</td></tr>
+</table>
+</body>
 </html>
