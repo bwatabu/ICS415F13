@@ -1,0 +1,35 @@
+<html>
+<head>
+<script type="text/javascript">
+function validateForm(){ 
+	var allBoxes = document.getElementById("all");
+	var count = 0;
+        var empties = new Array();
+	for(var i = 0; i < allBoxes.length; i++){
+		
+			if(allBoxes[i].value.length==0){
+				allBoxes[i].style.backgroundColor="red";
+                                empties[count] = allBoxes[i]; 
+                               count++;
+			}
+		
+	}
+var pw1 = document.getElementById('pw1');
+var pw2 = document.getElementById('pw2');
+if(pw1.value != pw2.value){
+ alert("not same");
+}
+return false;
+}
+</script>
+</head>
+<body>
+<form id="all" name="myForm" action="testing.html" onsubmit="return validateForm()" method="post">
+User name: <input id="user" type="text" name="name"><br/>
+Email: <input type="email" name="email"><br/>
+Password: <input type="password" name="password"><br/>
+Confirm Password: <input type="password" name="confirm"><br/>
+<input type="submit" value = "Submit">
+</form>
+</body>
+</html>
