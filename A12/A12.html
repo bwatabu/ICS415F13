@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="US-ASCII">
+</head>
+<body>
+	<form>
+	<input type="url" id="input">Enter url</input>
+	</form>
+	<button onclick="getTags()">Submit</button>
+	<button id="script" onclick="getScripts()">Get Script(s)</button>
+</body>
+<script>
+
+function getTags(){
+	var url = $("#input").val();
+	$.get(url, function(data, status){
+		var page = $(data);
+		var all = page.find("*");
+		for(var i = 0; i < all.length; i++){
+			var name = all[i].tagName;
+			var arr = all.find(name);
+			$("form").after("|"+name+"|"+arr.length+"|, ");
+		}
+		
+	});
+}
+function getScripts(){
+	var url = $("#input").val();
+	$.get(url, function(data, status){
+		var page = $(data);
+		var all = page.find("*, script");
+		for(var i = 0; i < all.length; i++){
+			if(all[i].tagName == "SCRIPT"){
+			var src = all[i].src;
+			$("#script").after("</br>|"+src+"|, ");
+			}
+		}
+		
+	});
+}
+
+
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+</html>
